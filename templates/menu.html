@@ -1,0 +1,63 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left">
+        <ion-header-bar class="bar-dark">
+            <h1 class="title"> Menu </h1>
+        </ion-header-bar>
+        <ion-content>
+            <div class="list">
+
+                <a menu-close class="item item-icon-left" href="#/app/main" ng-click="login()">
+                    <i class="icon ion-home"></i>
+                    Trang chủ
+                </a>
+
+                <a menu-close class="item item-icon-left" href="#/app/browse/all">
+                    <i style="font-size: 29px" class="icon fa fa-book"></i>
+                    Tra từ
+                </a>
+
+                <a menu-close class="item item-icon-left" href="#/app/liked">
+                    <i style="font-size: 29px" class="icon fa fa-heart-o"></i>
+                    Yêu thích
+                    <span class="badge badge-assertive">{{liked_list_id.length}}</span>
+                </a>
+
+
+                <a menu-close class="item item-icon-left" href="#/app/browse/troll-ban">
+                    <i class="icon icon-troll"></i>
+                    Troll bạn bè 
+                </a>
+
+
+                <a menu-close class="item item-icon-left" href="#/app/browse/dong-vat">
+                    <i class="icon icon-bat"></i>
+                    Động vật quý hiếm
+                </a>
+                
+                <a menu-close class="item item-icon-left" href="#/app/browse/thuc-an">
+                    <i class="icon icon-dish"></i>
+                    Sơn hào hải vị
+                </a>
+                
+
+                <a class="item item-icon-left" ng-click="about.open()">
+                    <i class="icon ion-chatbubble-working"></i>
+                    Thông tin ứng dụng
+                </a>
+            </div>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

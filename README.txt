@@ -1,0 +1,1 @@
+﻿Code cũ đã lâu :v viết app nói lái nhưng bị trì trệ

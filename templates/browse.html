@@ -1,0 +1,28 @@
+<ion-view view-title="{{page_title}}">
+    <div class="bar bar-subheader  item-input-inset">
+        <label class="item-input-wrapper">
+            <i class="icon ion-ios7-search placeholder-icon"></i>
+            <input type="search" ng-model="search" placeholder="Tra từ">
+        </label>
+    </div>
+
+    <ion-content>
+
+        <div class="list" style="margin-top: 43px;">
+
+            <div id="browse_panel" ng-repeat="item in words| filter:search">
+                <div class="item item-divider" ng-if="!item.word">
+                    <strong>{{item.title}}</strong>
+                </div>
+                <a href="#" class="item item-icon-right" ng-if="item.word">
+                    <h2>{{item.word}}</h2>
+                    <p ng-bind-html="item.content_html"></p>
+                    <i ng-click="like(item)" class="icon fa fa-thumbs-up" ng-class="item.liked ? 'liked' : ''"></i>
+                </a>
+            </div>
+
+
+        </div>
+
+    </ion-content>
+</ion-view>

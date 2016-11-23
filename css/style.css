@@ -1,0 +1,85 @@
+/* Empty. Add your own CSS if you like */
+.icon-troll{
+    background: url(../img/icon-troll.png) no-repeat center center;
+    /*background-image: url(../img/icon-troll.png);*/
+    width: 38px;
+    /*background-repeat: no-repeat;*/
+}
+.icon-bat{
+    background: url(../img/icon-bat.png) no-repeat center center;
+    /*background-image: url(../img/icon-troll.png);*/
+    width: 38px;
+    /*background-repeat: no-repeat;*/
+}
+.icon-dish{
+    background: url(../img/icon-dish.png) no-repeat center center;
+    width: 38px;
+}
+
+
+/*.img-responsive{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}*/
+.text-center .img-responsive{
+    margin: auto;
+}
+
+.border{
+    border: 1px solid #ddd;
+}
+
+.menu-box{
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+
+.menu-box .title{
+    margin: 0;
+    font-size: 25px;
+    line-height: 40px;
+    height: 40px;
+    vertical-align: auto;
+}
+.menu-box .img-responsive{
+    height: 75%;
+}
+/* SM */
+@media (min-width: 768px) {
+    .menu-box{
+        width: 200px;
+        height: 200px;;
+    }
+}
+/* MD */
+@media (min-width: 992px) {
+    .menu-box{
+        width: 250px;
+        height: 250px;;
+    }
+}
+
+/* LG */
+@media (min-width: 1200px) {
+    .menu-box{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+#browse_panel ul{
+    list-style-type: circle;
+}
+
+#browse_panel ul li {
+    padding-left: 3px;
+}
+
+.liked {
+    color: #0c63ee;
+}
